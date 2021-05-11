@@ -7,7 +7,6 @@ class Band:
         self.musicians = [self.guitarist, self.bassist, self.singer]
         self.manager = manager
         
-        
 
     def play(self):
         playing_message = ""
@@ -15,7 +14,6 @@ class Band:
             playing_message += f"{musician.play()}\n"
         return playing_message
     
-    #  passing responsibility to manager class to calculate payroll
     def calculate_payroll(self):
         return self.manager.calculate_payroll(self.musicians)
 
